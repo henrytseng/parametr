@@ -1,10 +1,14 @@
 {
   "name": "parametr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A parameter management utility.",
   "main": "./index",
   "scripts": {
     "test": "node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:henrytseng/parametr.git"
   },
   "keywords": [
     "paramter",
