@@ -35,5 +35,23 @@ var safeConfig = params(exampleConfig)
 // { cipherKey: 'abcdefg', hostname: 'xyz.com' }
 ```
 
+The API is designed around a decorator pattern and includes chainable methods to define constructs.  `parametr` does not mutate objects.  
+
+### Required properties
+
+```
+params(myconfig).require('abc')
+```
+
+A property which is required will throw errors when they are missing.  All `required` properties are also `permitted`.  
+
+### Permitted properties
+
+```
+params(myconfig).permit('abc')
+```
+
+Any properties which are permitted will be picked and all other properties omitted.  
+
 
 
