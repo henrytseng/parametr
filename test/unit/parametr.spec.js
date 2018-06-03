@@ -13,6 +13,16 @@ test('properties not altered', () => {
   expect(Object.keys(parametrizedData).indexOf('permit')).toEqual(-1);
 });
 
+test('required are also permitted', () => {
+  let data = { abc: 1, def: 2, xyz: 5 };
+  let parametrizedData = parametr(data)
+    .require('abc')
+    .permit('def');
+  expect(Object.keys(parametrizedData).indexOf('abc')).not.toEqual(-1);
+  expect(Object.keys(parametrizedData).indexOf('def')).not.toEqual(-1);
+  expect(Object.keys(parametrizedData).indexOf('xyz')).toEqual(-1);
+});
+
 test('missing property throws an error when required', () => {
   let data = { abc: 1, def: 2 };
   expect(() => {
