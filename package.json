@@ -1,0 +1,25 @@
+{
+  "name": "parametr",
+  "version": "1.0.0",
+  "description": "A parameter management utility.",
+  "main": "./index",
+  "scripts": {
+    "test": "node_modules/.bin/jest"
+  },
+  "keywords": [
+    "paramter",
+    "configuration",
+    "validation",
+    "checking",
+    "sanitization"
+  ],
+  "author": "Henry Tseng <info@heycanvas.com> (http://www.heycanvas.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "engines": {
+    "node": ">= 6.x",
+    "npm": ">= 2.x"
+  }
+}
