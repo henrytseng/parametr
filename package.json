@@ -1,6 +1,6 @@
 {
   "name": "parametr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A parameter management utility.",
   "main": "./index",
   "scripts": {

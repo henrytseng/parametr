@@ -1,6 +1,8 @@
 # parametr
 A parameter management utility.
 
+[![Build Status](https://travis-ci.org/henrytseng/parametr.svg?branch=master)](https://travis-ci.org/henrytseng/parametr)
+
 This utility allows you to quickly validate and sanitize a configuration Object.  
 
 
